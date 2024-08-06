@@ -1,0 +1,10 @@
+@TrainingTrackAPI_HostAddress = https://localhost:7276
+
+GET {{TrainingTrackAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{TrainingTrackAPI_HostAddress}}/api/food/getAllFoods
+
+###

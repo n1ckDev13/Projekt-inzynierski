@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diet.Food">
+    
+    
+    
+    <RefreshView IsRefreshing="{Binding IsPageLoading}"
+                 Command="{Binding RefreshingCommand}">
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <SearchBar Grid.Row="0" Placeholder="Szukaj..."
+                       TextChanged="OnSearchTextChanged"
+                       Margin="0,0,0,10"
+            ></SearchBar>
+            
+            <CollectionView Grid.Row="1" ItemsSource="{Binding FilteredFoods}"
+                            
+                            Margin="0, 0, 0, 0">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                                   ItemSpacing="10"></LinearItemsLayout>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                
+                <DataTemplate>
+                    <VerticalStackLayout>
+                    
+                        
+                    <VerticalStackLayout Padding="5">
+                            <Label Text="{Binding FoodName}" 
+                                   FontAttributes="Bold"
+                                   ></Label>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                    <RowDefinition Height="auto"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" Text="{Binding CaloriesPer100g, StringFormat='Kalorie na 100 gram : {0}'}" TextColor="Red"></Label>
+                                <Label Grid.Row="1" Text="{Binding ProteinPer100g, StringFormat='Białko na 100 gram : {0} g'}" TextColor="Blue"></Label>
+                                <Label Grid.Row="2" Text="{Binding CarbsPer100g, StringFormat='Węglowodany na 100 gram : {0} g'}" TextColor="Green"></Label>
+                                <Label Grid.Row="3" Text="{Binding FatPer100g, StringFormat='Tłuszcz na 100 gram : {0} g'}" TextColor="DarkOrange"></Label>
+                            </Grid>
+                        </VerticalStackLayout>
+                        
+                    
+                    </VerticalStackLayout>
+                </DataTemplate>
+                
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+    </RefreshView>
+</ContentPage>

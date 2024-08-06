@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:Diet.Converters"
+             x:Class="Diet.EditUserFoodPage">
+    <ContentPage.Resources>
+        <converters:SwapBoolValueConverter
+            x:Key="SwapBoolValueConverter"></converters:SwapBoolValueConverter>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"
+                     IsEnabled="{Binding IsProcessing,
+                     Converter={StaticResource SwapBoolValueConverter}}">
+        <Grid RowSpacing="5" Grid.Row="1" Margin="20, 20, 20, 20" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label  Grid.Row="1" Text="Edytuj" HorizontalOptions="Center" FontSize="Subtitle"></Label>
+            <StackLayout Grid.Row="3" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                
+                <Entry x:Name="FoodNameEntry"  Placeholder="Nazwa jedzenia"  TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="200" HorizontalOptions="FillAndExpand" Margin="0, 0, 20, 0" 
+                       ></Entry>
+                <Label Text="Nazwa jedzenia musi zawierać między 1, a 150 znaków!" 
+                       HorizontalTextAlignment="Center"></Label>
+                
+                <Entry x:Name="ProteinEntry"  Placeholder="Ilość białka na 100g"  TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="200" HorizontalOptions="FillAndExpand" Margin="0, 0, 20, 0" 
+                       Keyboard="Numeric"></Entry>
+                
+                <Entry x:Name="CarbsEntry"  Placeholder="Ilość węglowodanów na 100g"  TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="200" HorizontalOptions="FillAndExpand" Margin="0, 0, 20, 0" 
+                       Keyboard="Numeric"></Entry>
+               
+                <Entry x:Name="FatEntry"  Placeholder="Ilość tłuszczu na 100g"  TextColor="Black" FontAttributes="Bold" VerticalOptions="Center" WidthRequest="200" HorizontalOptions="FillAndExpand" Margin="0, 0, 20, 0" 
+                       Keyboard="Numeric"></Entry>
+                   <Label Text="Ilość pojedyńczych makroskładników musi wynosić między 0.1, a 1000 gramów!" 
+                          HorizontalTextAlignment="Center"></Label>
+                
+                <Button Text="Edytuj" FontAttributes="Bold" BackgroundColor="MediumPurple"
+                        Margin="0,20, 0, 0"
+                        Clicked="OnEditButtonClicked"
+                        ></Button>
+            </StackLayout>
+        </Grid>
+            <ActivityIndicator Grid.Row="9" x:Name="Indicator"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"></ActivityIndicator>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

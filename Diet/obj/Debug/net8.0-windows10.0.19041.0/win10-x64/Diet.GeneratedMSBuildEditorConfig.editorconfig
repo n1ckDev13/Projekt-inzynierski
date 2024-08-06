@@ -1,0 +1,103 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Diet
+build_property.ProjectDir = C:\Users\tropi\Documents\TrainingTrackAPI\Diet\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/Food.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.Food.xaml
+build_metadata.AdditionalFiles.TargetPath = Food.xaml
+build_metadata.AdditionalFiles.RelativePath = Food.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/ProfilePages/ChangeEmailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.ProfilePages.ChangeEmailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePages\ChangeEmailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePages\ChangeEmailPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/ProfilePages/ChangePasswordPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.ProfilePages.ChangePasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePages\ChangePasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePages\ChangePasswordPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/ProfilePages/ChangeUserNamePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.ProfilePages.ChangeUserNamePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePages\ChangeUserNamePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePages\ChangeUserNamePage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/ProfilePages/DeactivateAccountPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.ProfilePages.DeactivateAccountPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePages\DeactivateAccountPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePages\DeactivateAccountPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/ProfilePages/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.ProfilePages.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePages\ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePages\ProfilePage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = RegisterPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/UserFoodPages/AddUserFoodPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.UserFoodPages.AddUserFoodPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserFoodPages\AddUserFoodPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserFoodPages\AddUserFoodPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/UserFoodPages/EditUserFoodPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.UserFoodPages.EditUserFoodPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserFoodPages\EditUserFoodPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserFoodPages\EditUserFoodPage.xaml
+
+[C:/Users/tropi/Documents/TrainingTrackAPI/Diet/UserFoodPages/UserFoodPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Diet.UserFoodPages.UserFoodPage.xaml
+build_metadata.AdditionalFiles.TargetPath = UserFoodPages\UserFoodPage.xaml
+build_metadata.AdditionalFiles.RelativePath = UserFoodPages\UserFoodPage.xaml

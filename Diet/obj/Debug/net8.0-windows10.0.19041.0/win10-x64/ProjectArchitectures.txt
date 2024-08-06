@@ -1,0 +1,2 @@
+C:\Users\tropi\Documents\TrainingTrackAPI\ApiServiceAccess\ApiServiceAccess.csproj;neutral
+C:\Users\tropi\Documents\TrainingTrackAPI\Diet\Diet.csproj;x64

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Diet.ProfilePage">
+    <RefreshView IsRefreshing="{Binding IsPageLoading}"
+                 Command="{Binding RefreshingCommand}">
+        <VerticalStackLayout HorizontalOptions="Center"
+                             VerticalOptions="Center">
+            <Grid RowSpacing="5"
+                  VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                    
+                <Label Grid.Row="0" x:Name="UserNameLabel" 
+                       FontSize="Title"
+                       HorizontalOptions="Center"></Label>
+                <Label Grid.Row="1" x:Name="UserMailLabel" 
+                       FontSize="Title"
+                       HorizontalOptions="Center"></Label>
+                <Button Grid.Row="2" Text="Zmień nazwę użytkownika"
+                        BackgroundColor="MediumPurple"
+                        HorizontalOptions="Center"
+                        Clicked="OnChangeUserNameButtonClicked"></Button>
+                <Button Grid.Row="3" Text="Zmień e-mail"
+                        BackgroundColor="MediumPurple"
+                        HorizontalOptions="Center"
+                        Clicked="OnChangeEmailButtonClicked"></Button>
+                <Button Grid.Row="4" Text="Zmień hasło"
+                        BackgroundColor="MediumPurple"
+                        HorizontalOptions="Center"
+                        Clicked="OnChangePasswordButtonClicked"></Button>
+                <Button Grid.Row="5" Text="Dezaktywuj konto"
+                        BackgroundColor="DarkRed"
+                        HorizontalOptions="Center"
+                        Clicked="OnDeactivateAccountButtonClicked"></Button>
+                <Button Grid.Row="6" Text="Wyloguj"
+                        BackgroundColor="MediumPurple"
+                        HorizontalOptions="Center"
+                        Clicked="OnLogoutButtonClicked"></Button>
+            </Grid>
+        </VerticalStackLayout>
+    </RefreshView>
+</ContentPage>

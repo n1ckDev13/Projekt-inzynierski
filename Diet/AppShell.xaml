@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Diet.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Diet"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Diet">
+
+   <FlyoutItem Title="Plany diety"></FlyoutItem>
+    <FlyoutItem Title="Jedzenie">
+        <ShellContent Title="Jedzenie"
+                      ContentTemplate="{DataTemplate local:Food}"></ShellContent>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Twoje jedzenie">
+        <ShellContent Title="Twoje jedzenie"
+                      ContentTemplate="{DataTemplate local:UserFoodPage}"></ShellContent>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Konto">
+        <ShellContent Title="Konto"
+                      ContentTemplate="{DataTemplate local:ProfilePage}"></ShellContent>
+    </FlyoutItem>
+
+</Shell>
